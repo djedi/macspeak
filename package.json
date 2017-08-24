@@ -1,0 +1,20 @@
+{
+  "name": "macspeak",
+  "version": "1.0.0",
+  "description": "Make a mac talk",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rimraf macspeak-* && electron-packager . --platform=darwin --arch=x64 --icon=app",
+    "clean": "rimraf macspeak-*",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-packager": "^9.0.0",
+    "electron-prebuilt": "^1.4.13",
+    "rimraf": "^2.6.1",
+    "ssh-exec": "^2.0.0"
+  }
+}

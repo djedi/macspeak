@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Macspeak</title>
+    <script src="./say.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="words">What to say</label>
+                <input type="text" class="form-control" id="words" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="voice">Voice</label>
+                <select name="voice" id="voice">
+                    <option>Agnes</option>
+                    <option>Kathy</option>
+                    <option>Princess</option>
+                    <option>Vicki</option>
+                    <option selected="selected">Victoria</option>
+                    <option>Bruce</option>
+                    <option>Fred</option>
+                    <option>Junior</option>
+                    <option>Ralph</option>
+                    <option>Albert</option>
+                    <option>Bad News</option>
+                    <option>Bahh</option>
+                    <option>Bells</option>
+                    <option>Boing</option>
+                    <option>Bubbles</option>
+                    <option>Cellos</option>
+                    <option>Deranged</option>
+                    <option>Good News</option>
+                    <option>Hysterical</option>
+                    <option>Pipe Organ</option>
+                    <option>Trinoids</option>
+                    <option>Whisper</option>
+                    <option>Zarvox</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <label for="volume">Volume</label>
+                    <input type="range" id="volume"  min="0" max="100" value="25" />
+                </div>
+            <div class="form-group">
+                <label for="host">Host</label>
+                <input type="text" class="form-control" id="host" placeholder="127.0.0.1" value="">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="" value="">
+            </div>
+            <div class="form-group">
+                <label for="username">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="" value="">
+            </div>
+        </form>
+
+        <button type="button" class="btn btn-primary" onclick="sayWords()">Say It</button>
+        <button type="button" class="btn btn-info" onclick="testConnection()">Test Connection</button>
+    </div>
+</body>
+
+</html>
